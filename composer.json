@@ -1,0 +1,21 @@
+{
+    "name": "yui-ezic/z99-parser",
+    "description": "Parser for Z99 language",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Misha Zuev",
+            "email": "mishan221199@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2.5",
+      "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Z99Parser\\": "src/"
+        }
+    }
+}
