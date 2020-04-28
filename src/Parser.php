@@ -231,7 +231,8 @@ class Parser
             $result[$root][] = $this->arithmExpression();
         } catch (ParserException $e ) {
             $this->stream->goTo($position);
-            $result[$root] = $this->term();
+            $result[$root] = null;
+            $result[$root][] = $this->term();
         }
 
         return $result;
@@ -256,7 +257,8 @@ class Parser
             $result[$root][] = $this->term();
         } catch (ParserException $e) {
             $this->stream->goTo($position);
-            $result[$root] = $this->factor();
+            $result[$root] = null;
+            $result[$root][] = $this->factor();
         }
 
         return $result;
